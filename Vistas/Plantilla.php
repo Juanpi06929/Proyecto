@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,7 +77,7 @@
 
   <?php
    //Login de Inicio-->
-  if (isset($_SESSION["IniciarSesion"])&&($_SESSION["IniciarSesion"]=="ok")){
+  if (isset($_SESSION["IniciarSesion"]) && $_SESSION["IniciarSesion"] == "ok"){
     ////////////////////////////////////////////////////////////////////////////
     echo '<div class="wrapper">';
 
@@ -85,7 +89,10 @@
    include "Modulo/Menu.php ";
    ///CONTENIDO-->
    //include "Modulo/Inicio.php";
-
+   echo '<script> 
+    console.log("hasta qui tmabien llego");
+    
+   </script>';
    if(isset($_GET["ruta"])){
 
      if($_GET["ruta"]=="Inicio" ||
@@ -95,7 +102,8 @@
      $_GET["ruta"]=="Cliente"||
      $_GET["ruta"]=="Venta"||
      $_GET["ruta"]=="Crear-Venta"||
-     $_GET["ruta"]=="Reporte"){
+     $_GET["ruta"]=="Reporte" ||
+     $_GET["ruta"]=="Salir"){
 
        include "Modulo/".$_GET["ruta"].".php";
 
@@ -117,6 +125,10 @@
   
 
   }else{
+    echo '<script> 
+    console.log("hasta qui tmabien llego");
+    
+   </script>';
     include "Modulo/Login.php";
 
     //login 014 siguiente

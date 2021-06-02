@@ -34,7 +34,7 @@
            <ul class="dropdown-menu">
              <li class="user-body">
              <div class="pull-right">
-             <a href="" class="btn btn-default btn-flat">Salir</a>
+             <a href="Salir" class="btn btn-default btn-flat">Salir</a>
               <!--010 Agregando los modulos del sistema POS - parte 2 siguiente--->
              
              </div>
