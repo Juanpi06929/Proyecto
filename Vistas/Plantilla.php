@@ -96,7 +96,7 @@
    if(isset($_GET["ruta"])){
 
      if($_GET["ruta"]=="Inicio" ||
-     $_GET["ruta"]=="Usuarios" ||
+     $_GET["ruta"]=="Usuario" ||
      $_GET["ruta"]=="Categoria"||
      $_GET["ruta"]=="Producto"||
      $_GET["ruta"]=="Cliente"||
